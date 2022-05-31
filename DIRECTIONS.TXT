@@ -1,0 +1,3 @@
+replace current placeholder id with your bot's client id for a valid discord bot invite link
+replace permissions value (you can generate one in the discord developer portal)
+https://discord.com/oauth2/authorize?client_id=123456789&scope=bot&permissions=8
