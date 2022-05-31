@@ -20,7 +20,7 @@ Is a discord.js template for beginners who don't know where to begin.
   Once you are done, you can run the bot!
   
 # Socials:
-  [Twitch][twitch]
+  [Twitch][twitch]\n
   [Discord][discord]
 
 [discord]: https://discord.gg/24CDPUFgSE
