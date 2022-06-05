@@ -15,7 +15,7 @@ Is a discord.js template for beginners who don't know where to begin.
   ```
   token = TOKEN_HERE
   ```
-  For a valid invite link for your bot, go to the `DIRECTIONS.txt` file and replace you client id and permisions value
+  For a valid invite link for your bot, go to the `DIRECTIONS.txt` file and replace your client id and permisions value
   
   Once you are done, you can run the bot!
   
