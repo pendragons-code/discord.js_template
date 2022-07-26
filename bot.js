@@ -3,8 +3,7 @@ const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
 const Discord = require('discord.js')
 const { Client, Intents } = require('discord.js');
-const myIntents = new Intents(32767);
-const bot = new Client({ intents: myIntents });
+const bot = new Client({ intents: 32767 });
 bot.commands = new Discord.Collection();
 bot.responses = new Discord.Collection();
 function commander(){
