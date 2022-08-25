@@ -1,7 +1,5 @@
 const fs = require('fs')
 const { Client, GatewayIntentBits, Collection} = require('discord.js');
-const { QuickDB } = require('quick.db');
-const db = new QuickDB();
 const bot = new Client({
   intents: [
 	GatewayIntentBits.DirectMessages,
@@ -24,7 +22,6 @@ const bot = new Client({
   ]
 });
 bot.commands = new Collection();
-bot.structures = new Collection();
 function commander(){
 console.log(`\x1b[32m%s`, "---------------------------------------------------------------------\n⭕ Commands ⭕\n---------------------------------------------------------------------")
 fs.readdirSync('./src/commands').forEach(dirs => {
@@ -51,17 +48,4 @@ const events = fs.readdirSync(`./events/${dirs}`).filter(file => file.endsWith('
 console.log(`\x1b[35m%s`, "---------------------------------------------------------------------")
 }
 
-function structurer() {
-console.log('\x1b[36m%s\x1b[0m', `---------------------------------------------------------------------\n⭕ Structures ⭕\n---------------------------------------------------------------------`)
-fs.readdirSync('./src/structure').forEach(dirs => {
-    const structure = fs.readdirSync(`./src/structure/${dirs}`).filter(files => files.endsWith('.js'));
-    for (const file of structure) {
-            const structure = require(`./src/structure/${dirs}/${file}`);
-            console.log('\x1b[36m%s\x1b[0m', `Loading additional component ${file} from ${dirs} ✅!`);
-            bot.structures.set(structure.name.toLowerCase(), structure);
-        };
-      })
-console.log('\x1b[36m%s\x1b[0m', "---------------------------------------------------------------------")
-    }
-
-module.exports = {eventer: eventer, commander: commander, structurer: structurer, bot: bot, db: db}
+module.exports = {eventer: eventer, commander: commander, bot: bot}
