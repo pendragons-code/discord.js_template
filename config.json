@@ -1,5 +1,6 @@
 {
     "activity": "activity here",
     "ownerid": "owner id here",
-    "prefix": "prefix here"
+    "prefix": "prefix here",
+    "bot-id": "bot id here"
 }
