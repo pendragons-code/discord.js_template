@@ -15,5 +15,15 @@ Is a discord.js template for beginners who don't know where to begin.
   ```
   token = TOKEN_HERE
   ```
-  
+# Invite Link
+  replace current placeholder id with your bot's client id for a valid discord bot invite link\
+  replace permissions value (you can generate one in the discord developer portal)\
+  ```https://discord.com/oauth2/authorize?client_id=123456789&scope=bot&permissions=8```
+# Socials:
+  [Twitch][twitch]\
+  [Discord][discord]
+
+
+[discord]: https://discord.gg/24CDPUFgSE
+[twitch]: https://www.twitch.tv/javiers_code
   Once you are done, you can run the bot!
